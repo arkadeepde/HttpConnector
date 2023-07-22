@@ -1,11 +1,6 @@
 # HttpConnector
 Custom HttpClient connector where you can consume external or internal APIs with custom model and plugin module.
 
-
-## Documentation
-Follow the link for [Git Repository](https://github.com/arkadeepde/HttpConnector)
-
-
 ## How to use
 1. Add the HttpConnector package
 2. Create the models for request & response 
@@ -44,7 +39,7 @@ public class WeatherHttpService : IHttpConnectorModule
 // initialize the instance
 HttpConnector<WeatherResponse, WeatherRequest> httpWeatherConnector
     = new HttpConnector<WeatherResponse, WeatherRequest>(new Uri("http://api.weatherstack.com/")
-    , null, typeof(WeatherHttpService));
+    , null, typeof(**WeatherHttpService**));
 ```
    
    
