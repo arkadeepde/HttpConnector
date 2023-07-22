@@ -39,7 +39,7 @@ public class WeatherHttpService : IHttpConnectorModule
 // initialize the instance
 HttpConnector<WeatherResponse, WeatherRequest> httpWeatherConnector
     = new HttpConnector<WeatherResponse, WeatherRequest>(new Uri("http://api.weatherstack.com/")
-    , null, typeof(**WeatherHttpService**));
+    , null, typeof(WeatherHttpService));
 ```
    
    
